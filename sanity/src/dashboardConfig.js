@@ -1,8 +1,8 @@
 export default {
   widgets: [
-    {name: 'structure-menu'},
+    { name: "structure-menu" },
     {
-      name: 'project-info',
+      name: "project-info",
       options: {
         // __experimental_before: [
         //   {
@@ -23,20 +23,20 @@ export default {
         // ],
         data: [
           {
-            title: 'GitHub repo',
-            value: 'https://github.com/jaydanurwin/gatsby-sanity-starter',
-            category: 'Code'
-          }
+            title: "GitHub repo",
+            value: "https://github.com/jaydanurwin/gatsby-sanity-starter",
+            category: "Code",
+          },
           // Add your own hosted website url here if you'd like a quick link to the frontend
           // {title: 'Frontend', value: 'https://jaydanurwin.com', category: 'apps'}
-        ]
-      }
+        ],
+      },
     },
-    {name: 'project-users', layout: {height: 'auto'}},
-    {
-      name: 'document-list',
-      options: {title: 'Recent blog posts', order: '_createdAt desc', types: ['post']},
-      layout: {width: 'medium'}
-    }
-  ]
-}
+    { name: "project-users", layout: { height: "auto" } },
+    // {
+    //   name: 'document-list',
+    //   options: {title: 'Recent blog posts', order: '_createdAt desc', types: ['post']},
+    //   layout: {width: 'medium'}
+    // }
+  ],
+};

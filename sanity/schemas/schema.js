@@ -5,20 +5,14 @@ import createSchema from "part:@sanity/base/schema-creator";
 import schemaTypes from "all:part:@sanity/base/schema-type";
 
 // Document schemas
-import author from "./documents/author";
-import category from "./documents/category";
-import post from "./documents/post";
 import siteSettings from "./documents/siteSettings";
-import mainContent from "./documents/mainContent";
 import tag from "./documents/tag";
 import social from "./documents/social";
 
 // Object types
-import bodyPortableText from "./objects/bodyPortableText";
-import bioPortableText from "./objects/bioPortableText";
-import excerptPortableText from "./objects/excerptPortableText";
-import mainImage from "./objects/mainImage";
-import authorReference from "./objects/authorReference";
+// import bodyPortableText from "./objects/bodyPortableText";
+// import bioPortableText from "./objects/bioPortableText";
+// import excerptPortableText from "./objects/excerptPortableText";
 import feature from "./objects/feature";
 
 // Plugs types
@@ -39,16 +33,7 @@ export default createSchema({
     feature,
     social,
     socialCallout,
-    mainContent,
     siteSettings,
-    post,
-    category,
-    author,
-    mainImage,
-    authorReference,
-    bodyPortableText,
-    bioPortableText,
-    excerptPortableText,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
   ]),
