@@ -8,15 +8,18 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 import siteSettings from "./documents/siteSettings";
 import tag from "./documents/tag";
 import social from "./documents/social";
+import page from "./documents/page";
 
 // Object types
 // import bodyPortableText from "./objects/bodyPortableText";
 // import bioPortableText from "./objects/bioPortableText";
 // import excerptPortableText from "./objects/excerptPortableText";
 import feature from "./objects/feature";
+import openGraph from "./objects/openGraph";
 
 // Plugs types
 import hero from "./plugs/hero";
+import features from "./plugs/features";
 import socialCallout from "./plugs/socialCallout";
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -30,8 +33,11 @@ export default createSchema({
     // in the studio.
     hero,
     tag,
+    features,
     feature,
     social,
+    page,
+    openGraph,
     socialCallout,
     siteSettings,
     // When added to this list, object types can be used as
