@@ -3,6 +3,7 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV || "development"}`,
 });
 
+const { siteMetadata } = require("../../my-hello-world-starter/gatsby-config");
 const clientConfig = require("./client-config");
 
 const isProd = process.env.NODE_ENV === "production";
@@ -22,4 +23,8 @@ module.exports = {
       },
     },
   ],
+  siteMetadata: {
+    title: "Bing",
+    description: "Bing test site",
+  },
 };

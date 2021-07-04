@@ -1,8 +1,13 @@
 export default {
-  title: "Page",
+  title: "Pages",
   name: "page",
   type: "document",
   fields: [
+    {
+      title: "Page Title",
+      name: "pageTitle",
+      type: "string",
+    },
     {
       title: "Title",
       name: "title",
