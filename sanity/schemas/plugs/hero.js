@@ -19,5 +19,20 @@ export default {
       name: "subheading",
       type: "string",
     },
+    {
+      title: "Hero Image",
+      name: "heroImage",
+      type: "image",
+    },
+    {
+      title: "Button One",
+      name: "buttonOne",
+      type: "string",
+    },
+    {
+      title: "Button Two",
+      name: "buttonTwo",
+      type: "string",
+    },
   ],
 };

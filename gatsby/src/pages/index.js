@@ -1,12 +1,12 @@
 import React from "react";
 
 import Layout from "../components/Layout";
-import MainContent from "../components/MainContent";
+import Hero from "../components/Hero";
 
 const IndexPage = () => {
   return (
     <Layout>
-      <MainContent />
+      <Hero />
     </Layout>
   );
 };

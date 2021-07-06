@@ -21,6 +21,7 @@ import openGraph from "./objects/openGraph";
 import hero from "./plugs/hero";
 import features from "./plugs/features";
 import socialCallout from "./plugs/socialCallout";
+import buttons from "./plugs/buttons";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -32,6 +33,7 @@ export default createSchema({
     // The following are document types which will appear
     // in the studio.
     hero,
+    buttons,
     tag,
     features,
     feature,

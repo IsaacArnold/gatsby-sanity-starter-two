@@ -5,6 +5,8 @@ export default {
   fields: [
     {
       title: "Page Title",
+      description:
+        "This is only used in the CMS - will not display on the website",
       name: "pageTitle",
       type: "string",
     },
@@ -40,6 +42,9 @@ export default {
         },
         {
           type: "socialCallout",
+        },
+        {
+          type: "buttons",
         },
       ],
     },
