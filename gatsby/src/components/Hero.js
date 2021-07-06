@@ -30,13 +30,22 @@ const Hero = () => {
           <GatsbyImage
             image={data.sanityPage.content[0].heroImage.asset.gatsbyImageData}
             alt="Image"
+            className="hero-img"
           />
-          <h2 className="content-heading">
-            {data.sanityPage.content[0].heading}
-          </h2>
-          <p>{data.sanityPage.content[0].subheading}</p>
-          <Link to="/">{data.sanityPage.content[0].buttonOne}</Link>
-          <Link to="/">{data.sanityPage.content[0].buttonTwo}</Link>
+          <div className="hero-content">
+            <h2 className="content-heading">
+              {data.sanityPage.content[0].heading}
+            </h2>
+            <p>{data.sanityPage.content[0].subheading}</p>
+            <div className="hero-btns">
+              <Link to="/" className="btn-one">
+                {data.sanityPage.content[0].buttonOne}
+              </Link>
+              <Link to="/" className="btn-two">
+                {data.sanityPage.content[0].buttonTwo}
+              </Link>
+            </div>
+          </div>
         </section>
       )}
     />

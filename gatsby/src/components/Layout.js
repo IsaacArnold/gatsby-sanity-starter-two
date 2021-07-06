@@ -7,7 +7,7 @@ import "../styles/normalize.css";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="layout">
       <Navbar />
       <div className="content">{children}</div>
       <Footer />
