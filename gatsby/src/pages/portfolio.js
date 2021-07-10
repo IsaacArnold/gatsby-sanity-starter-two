@@ -1,6 +1,7 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import SEO from "../components/seo";
+import Layout from "../components/Layout";
 
 const Portfolio = () => {
   return (
@@ -22,15 +23,17 @@ const Portfolio = () => {
         }
       `}
       render={(data) => (
-        <section className="hero-section">
-          <SEO title={data.sanityPage.openGraph.title} />
-          <div className="hero-content">
-            <h2 className="content-heading">
-              {data.sanityPage.content[0].heading}
-            </h2>
-            <p>{data.sanityPage.content[0].subheading}</p>
-          </div>
-        </section>
+        <Layout>
+          <section className="hero-section">
+            <SEO title={data.sanityPage.openGraph.title} />
+            <div className="hero-content">
+              <h2 className="content-heading">
+                {data.sanityPage.content[0].heading}
+              </h2>
+              <p>{data.sanityPage.content[0].subheading}</p>
+            </div>
+          </section>
+        </Layout>
       )}
     />
   );
