@@ -5,14 +5,15 @@ export default {
   fields: [
     {
       title: "Page Title",
+      name: "title",
       description:
         "This is only used in the CMS - will not display on the website",
-      name: "pageTitle",
       type: "string",
     },
     {
       title: "Title",
-      name: "title",
+      name: "pagetitle",
+      description: "This will be the main page and heading title.",
       type: "string",
     },
     {

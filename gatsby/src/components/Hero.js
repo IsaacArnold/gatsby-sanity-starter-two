@@ -7,7 +7,7 @@ const Hero = () => {
     <StaticQuery
       query={graphql`
         query MyQuery {
-          sanityPage {
+          sanityPage(slug: { current: { eq: "besnik" } }) {
             content {
               ... on SanityHero {
                 label

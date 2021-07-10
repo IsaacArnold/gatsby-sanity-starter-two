@@ -3,7 +3,7 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV || "development"}`,
 });
 
-const { siteMetadata } = require("../../my-hello-world-starter/gatsby-config");
+// const { siteMetadata } = require("../../my-hello-world-starter/gatsby-config");
 const clientConfig = require("./client-config");
 
 const isProd = process.env.NODE_ENV === "production";
@@ -27,7 +27,11 @@ module.exports = {
     },
   ],
   siteMetadata: {
-    title: "Bing",
-    description: "Bing test site",
+    title: "Besnik",
+    titleTemplate: "%s | Simple Website Development",
+    description: "Besnik  helps you build beautiful websites that stand out!",
+    url: "https://www.besnik.com", // No trailing slash allowed!
+    image: "./static/Saly-10.png", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@besnik",
   },
 };
