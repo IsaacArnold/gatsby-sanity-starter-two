@@ -17,7 +17,7 @@ export default {
     {
       title: "Subheading",
       name: "subheading",
-      type: "string",
+      type: "text",
     },
     {
       title: "Hero Image",
