@@ -12,8 +12,6 @@ import page from "./documents/page";
 
 // Object types
 // import bodyPortableText from "./objects/bodyPortableText";
-// import bioPortableText from "./objects/bioPortableText";
-// import excerptPortableText from "./objects/excerptPortableText";
 import feature from "./objects/feature";
 import openGraph from "./objects/openGraph";
 

@@ -4,14 +4,14 @@ export default {
   type: "document",
   fields: [
     {
-      title: "Page Title",
+      title: "Page Label",
       name: "title",
       description:
         "This is only used in the CMS - will not display on the website",
       type: "string",
     },
     {
-      title: "Title",
+      title: "Page Title",
       name: "pagetitle",
       description: "This will be the main page and heading title.",
       type: "string",
